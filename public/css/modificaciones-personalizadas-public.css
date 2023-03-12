@@ -1,0 +1,627 @@
+/* Estilos del frontend */
+
+/* Footer siempre al fondo */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.elementor-location-footer{
+    margin-top: auto;
+}
+
+/* --> */
+
+.col-categoria{
+    padding-right: 0;
+}
+
+span[id$="container"]{
+    /* padding: 10px 0 !important; */
+    height: 37px !important;
+}
+
+.woocommerce form .form-row .select2-container{
+    line-height: revert !important;
+}
+
+.select2-selection--single{
+    display: inline-block !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    height: 100% !important; 
+}
+
+.select2-container--open .select2-dropdown--below{
+    margin-top: 0 !important;
+}
+
+.post-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.um-activity-featured-img{
+    width: 70% !important;
+}
+
+.wcmp_fpm_buttons{
+    display: none; 
+}
+
+.tinv-wraper, .tinv-wishlist.tinvwl-above_thumb-add-to-cart{
+    display: none;
+}
+
+.added_to_cart.wc-forward{
+    display: none !important;
+}
+/* Ventana modal para desktop y móvil */
+#modalComplementarios, #modalComplementarios_mobile{
+    background-color: rgba(2, 2, 2, 0.566);
+    transition: all 0.7s ease !important;
+    pointer-events:none !important;
+    opacity: 0;
+}
+/* --> */
+
+/* Alinear los titulos de los productos de WoCommerce en el modal de categorías */
+.woocommerce-loop-product__title{
+	min-height:80px;
+	display:flex;
+	align-items:center;
+}
+/* --> */
+
+/* Botón para cerrar ventana modal para desktop y móvil */
+#cerrar, #cerrar_mobile{
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #fff !important;
+    opacity: 1 !important;
+}
+/* --> */
+
+/* Color de fondo y tamaño para iconos*/
+#caret-back-outline{
+    fill: #722620;
+}
+
+.ionicon{
+    width: 30px !important;
+}
+/* --> */
+
+/* Ajuste del titulo del producto en la página de producto individual del sub modal de complementos */
+.summary.entry-summary{
+    position: relative;
+    right: 40%;
+}
+
+/* img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail.img-fluid.mx-auto.d-block.lazyloaded{
+    height: 300px !important;
+} */
+
+/* Para ventanas pequeñas */
+@media only screen and (max-width: 576px){
+
+    .summary.entry-summary{
+        position: relative;
+        right: 0;
+        top: 35px !important;
+    }
+}
+
+/* Imagen del producto complementario en mobile */
+@media only screen and (max-width: 992px){
+
+    img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail.img-fluid.mx-auto.d-block.lazyloaded{
+        height: 150px !important;
+    } 
+}
+/* --> */
+
+/* Para ventanas pequeñas */
+/* @media only screen and (max-width: 775px){
+    .summary.entry-summary{
+        position: relative;
+        right: 0;
+        top: 35px !important;
+    }
+} */
+/* --> */ 
+
+/* Espaciado del titulo y el menú de descripción*/
+.woocommerce-tabs.wc-tabs-wrapper{
+    margin-top: 50px;
+}
+/* --> */
+
+/* Tamaño de fuente para la caja de texto de los mensajes */
+#um_message_text{
+    font-size: 17px !important;
+}
+
+/* Barra de perfil y botones */
+.um-profile-nav{
+    background: #722620 !important;
+}
+
+.um-profile-nav-item.active a, .um.um-profile-nav-item.active a:hover{
+    background: #9f4039 !important;
+}
+/* --> */
+
+/* Segidores y seguidos */
+.um-followers-rc a.current, .um-followers-rc a span{
+    color: #999999 !important;
+}
+
+.um-followers-rc a.current, .um-followers-rc a.current span{
+    color: #722620 !important;
+}
+
+.um-unfollow-btn.um-button{
+    background: #722620 !important;
+}
+/* --> */
+
+/* Tuerca de opciones de perfil */
+.um-profile-headericon a:hover{
+    color: #722620 !important;
+}
+/* --> */
+
+/* Color de fondo para el botón de compra en el navegador Safari y el botón de subir libro cuando no tiene bookcoin. */
+#modper_add_to_cart{
+    background-color: #722620;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -webkit-appearance: none;
+}
+
+#modper_add_to_cart_mobile{
+    background-color: #722620;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -webkit-appearance: none;
+}
+
+#subirLibro{
+    background-color: #722620;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -webkit-appearance: none;
+}
+
+#subirLibro_mobile{
+    background-color: #722620;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -webkit-appearance: none;
+}
+/* --> */
+
+/* Dashboard del usuario DOKAN */
+
+/* Contenedor principal */
+.page-content{
+    margin: 0 5vw;
+}
+
+.dokan-profile-completeness > .dokan-panel-body{
+    display: none;
+}
+
+/* Menú de opciones */
+.dokan-dashboard-wrap > .dokan-dash-sidebar, .dokan-dashboard-menu{
+    /* border-radius: 10px; */
+    display: none;
+}
+
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu, .dokan-dashboard .dokan-dash-sidebar{
+    background-color: #722620 !important;
+}
+/* --> */
+
+/* Enlaces en menú de opciones */
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:hover{
+    background: #95322a !important;
+}
+
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:first-child:hover, .dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active:first-child{
+    border-radius: 10px 10px 0 0;
+}
+
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active{
+    background: #481612 !important;
+}
+
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a:hover{
+    background: #95322a !important;
+}
+
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active::after{
+    left: 95% !important;
+}
+
+/* Ocultar enlaces */
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.coupons,
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.reports,
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.reviews,
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.announcement{
+    display: none;
+}
+/* --> */
+
+
+/** Edición de producto **/
+/* Enlace de edición rápida de producto */
+.item-inline-edit{
+    display: none !important;
+}
+
+/* Enlace de eliminar producto */
+.delete{
+    display: none !important;
+}
+
+/* Formulario de edición */
+
+/* Enlace permanente */
+#edit-slug-box{
+    display: none !important;
+}
+
+/* Descripción | Inventario | SEO | Shipping | Linked | Atributos | Otros */
+.dokan-product-description, 
+.dokan-product-inventory, 
+.dokan-product-seo,
+.dokan-product-shipping-tax,
+.dokan-linked-product-options,
+.dokan-attribute-variation-options,
+.dokan-other-options{
+    display: none !important;
+}
+
+/* --> */
+
+/* Botones */
+input[type="submit"].dokan-btn-theme, a.dokan-btn-theme, .dokan-btn-theme{
+    background-color: #722620 !important;
+    border-color: #722620 !important;
+}
+/* --> */
+
+/* Tabla de productos */
+.dokan-table{
+    border: solid 1px;
+}
+
+.dokan-product-select,
+th#cb,
+.dokan-listing-filter,
+.dokan-w12,
+#product-filter > .dokan-form-group{
+    display: none;
+}
+
+.dokan-product-listing .dokan-product-listing-area tr .row-actions{
+    visibility: visible !important;
+}
+
+/* --> */
+
+/* Ordenes */
+.dokan-orders-content .dokan-orders-area ul.order-statuses-filter,
+.dokan-order-filter-serach,
+th.dokan-order-select,
+.dokan-order-shipping-status{
+    display: none;
+}
+
+/* Botón de ir atrás en detalles de pedido */
+input[type="submit"].dokan-btn:hover, a.dokan-btn:hover, .dokan-btn:hover, input[type="submit"].dokan-btn:focus, a.dokan-btn:focus, .dokan-btn:focus, input[type="submit"].dokan-btn.focus, a.dokan-btn.focus, .dokan-btn.focus{
+    background-color: #571C18 !important;
+    border-color: #571C18 !important;
+}
+
+/* --> */
+
+/* Popup añadir producto */
+.iziModal-header{
+    background: #722620 !important;
+}
+
+#dokan-add-product-popup{
+    border-bottom: 3px solid #722620 !important;
+}
+
+#dokan-add-new-product-form .dokan-price-container, #dokan-add-new-product-form .product-full-container .dokan-form-group .select2-container .selection, #dokan-add-new-product-form .product-full-container .dokan-form-group label[for="product_tag_search"]{
+    display: none;
+}
+
+/* Añadir producto desde la pestaña libros */
+.dokan-add-product-link{
+    display: none;
+}
+
+@media (max-width: 430px) {
+    .dokan-dashboard .dokan-product-listing .dokan-product-listing-area .product-listing-top .dokan-add-product-link {
+        display: none !important;
+    }
+}
+
+/* Campo de selección de peso en añadir producto */
+.custom-field{
+    color: #000;
+    background-color: #FFF;
+    box-shadow: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    margin-bottom: 25px;
+}
+
+.custom-help{
+    color: #666;
+    margin: 2px 0 5px 0;
+    font-size: 12px;
+    font-style: italic;
+    font-family: sans-serif;
+    display: block;
+}
+/* --> */
+
+
+/** Cargador de medios de WordPress*/
+
+/* Ocultar panel */
+[id^="__wp-uploader"]{
+    /* visibility: hidden; */
+}
+
+/* Pestañas de medios */
+/* #menu-item-upload, #menu-item-browse{
+    background-color: #ffffff;
+}
+
+#menu-item-upload:hover, #menu-item-browse:hover{
+    background-color: #722620;
+    color: #ffffff !important;
+}
+
+#menu-item-upload:not(:active), #menu-item-browse:not(:active){
+    color: #000000;
+}
+
+#menu-item-upload:focus, #menu-item-browse:focus{
+    box-shadow: none;
+} */
+
+/* Titulo del modal */
+/* #media-frame-title{
+    display: none;
+} */
+
+/* Filtros y búsqueda */
+/* .media-frame-content > .attachments-browser.has-load-more > .media-toolbar{
+    display: none;
+} */
+
+/* Panel de opciones de imágenes */
+/* .media-frame-content > .attachments-browser.has-load-more > .media-sidebar{
+    display: none;
+} */
+
+/* Establecer imagen */
+/* .media-frame-toolbar > .media-toolbar > .media-toolbar-primary.search-form > button {
+    background-color: #571C18;
+} */
+
+/* Cargar más y saltar */
+/* button.button.load-more.button-primary{
+    background-color: #571C18;
+} */
+
+/* Añadir portada */
+/* .product-edit-container .dokan-feat-image-upload{
+    height: auto;
+} */
+
+.dokan-new-product-area .featured-image{
+    width: 100% !important;
+}
+
+.dokan-new-product-area .dokan-product-meta{
+    width: 100% !important;
+}
+
+.product-edit-container .instruction-inside{
+    padding-top: 0 !important;
+}
+
+/* Añadir contraportada */
+#gallery{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    user-select: none;
+    color: #8f8f8f;
+    text-shadow: 0 1px 1px #fff;
+    background: #f0f0f0;
+    padding: 3px 10px;
+}
+
+#gallery:hover{
+    color: #ececec !important;
+    text-shadow: 0 1px 1px #6f6f6f;
+    background-color: #571C18 !important;
+    border-color: #571C18 !important;
+}
+
+.tooltip.fade.top.in{
+    display: none !important;
+}
+
+/* --> */
+
+/** Método de pago */
+.dokan-dashboard-header > .dokan-store-settign-header-wrap > .entry-title > small{
+    display: none;
+}
+
+#dokan-mangopay-tabs li{
+    border: 1px solid #dbdbdb !important;
+}
+
+#dokan-mangopay-tabs{
+    justify-content: space-evenly !important;
+    padding: 0 !important;
+}
+
+/** Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+#loader {
+    display: block;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 50%;
+    margin-top: 10px;
+    border: 6px solid #d5d0d0;
+    border-top: 6px solid #722620;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+#loaderGallery {
+    display: block;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 50%;
+    margin-top: 10px;
+    border: 6px solid #d5d0d0;
+    border-top: 6px solid #722620;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+#preloader-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: -0.5em;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*----------------*/
+
+/** Checkout */
+#billing_address_2_field{
+    display: none !important;
+}
+
+.elementor-kit-70 input:focus:not([type="button"]):not([type="submit"]), .elementor-kit-70 textarea:focus, .elementor-kit-70 .elementor-field-textual:focus{
+    border-width: 1px 1px 1px 1px !important;
+}
+
+main#content > div.page-content{
+    margin: 0 8vw !important;
+}
+
+div#customer_details{
+    margin-top: 20px !important;
+}
+
+/* input[name="dokan_mangopay_payment_type"]{
+    display: inline !important;
+} */
+
+.elementor-widget-woocommerce-checkout-page .woocommerce .wc_payment_method label{
+    display: inline-block !important;
+    margin-bottom: 10px;
+}
+
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box{
+    background-color: #ffffff !important;
+}
+
+label[for="payment_method_dokan_mangopay"]{
+    color: #ffffff !important;
+}
+
+.payment_box.payment_method_dokan_mangopay::before{
+    content: "" !important;
+    border: none !important;
+}
+
+.elementor-widget-woocommerce-checkout-page .woocommerce-checkout #payment .payment_methods .payment_box{
+    background-color: #ffffff !important;
+}
+
+#save_preauth_card_button, #place_order{
+    background-color: #722620 !important;
+}
+
+label[for="payment_method_dokan_mangopay"], input#payment_method_dokan_mangopay, div.mp_spacer{
+    display: none !important;
+}
+
+div.payment_box.payment_method_dokan_mangopay{
+    margin-top: 0 !important;
+}
+
+table.shop_table.woocommerce-checkout-review-order-table, table.shop_table.woocommerce-checkout-review-order-table th, table.shop_table.woocommerce-checkout-review-order-table td{
+    border: none !important;
+    border-collapse: collapse !important;
+    background-color: #ffffff !important;
+}
+
+table.shop_table.woocommerce-checkout-review-order-table thead tr th.product-name, table.shop_table.woocommerce-checkout-review-order-table thead tr th.product-total{
+    display: none;
+}
+
+#payment > ul.wc_payment_methods > h3{
+    font-size: 2.4rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb( 114, 38, 32 );
+}
+
+@media only screen and (max-width: 576px){
+
+    #vr-checkout{
+        display: none !important;
+    }
+    
+}
+
+/* -->  -->  */
